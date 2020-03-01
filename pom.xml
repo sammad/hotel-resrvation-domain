@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 	</parent>
   <groupId>com.ms</groupId>
-  <artifactId>hotel-reservation-domain</artifactId>
+  <artifactId>online-table-reservation-hotel-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>hotel-reservation-domain</name>
+  <name>hotel-service</name>
   <url>http://maven.apache.org</url>
   
 

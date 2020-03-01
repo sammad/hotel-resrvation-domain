@@ -1,4 +1,4 @@
-package com.ms.hotel_reservation.domain.model;
+package com.ms.hotel_reservation.domain.repo;
 
 import java.util.Collection;
 
