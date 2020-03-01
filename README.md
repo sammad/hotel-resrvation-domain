@@ -3,4 +3,4 @@ This is a sample microservices application simulating OTRS
 
 #Restaurant Entity
 
-[!./resources/hotel-reservation-restaurant-class-diagram.jpg]
+![restaurant class diagram](./src/main/resources/hotel-reservation-restaurant-class-diagram.jpg)
