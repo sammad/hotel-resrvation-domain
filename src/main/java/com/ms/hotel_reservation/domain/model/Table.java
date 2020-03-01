@@ -1,5 +1,7 @@
 package com.ms.hotel_reservation.domain.model;
 
+import java.util.Objects;
+
 public class Table<T> extends BaseEntity<T> {
 
 	private Integer capacity;
@@ -23,6 +25,19 @@ public class Table<T> extends BaseEntity<T> {
 				+ ", name=" + getName() + "]";
 	}
 	
+	@Override
+	public boolean equals(Object tableObj) {
+		Boolean result = Boolean.FALSE;
+		if(tableObj instanceof Table) {
+			if(this.getId().equals(((Table<T>)tableObj).getId())){
+				result=true;
+			}
+		}
+		return result;
+	}
 	
+	public int hashCode() {
+		return Objects.hashCode(this.getId());
+	}
 	
 }

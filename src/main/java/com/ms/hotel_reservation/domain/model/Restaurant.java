@@ -1,6 +1,7 @@
 package com.ms.hotel_reservation.domain.model;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Restaurant extends BaseEntity<String> {
 
@@ -21,5 +22,18 @@ public class Restaurant extends BaseEntity<String> {
 				+ ", Name=" + getName() + "]";
 	}
 	
+	@Override
+	public boolean equals(Object restaurantObj) {
+		Boolean result = Boolean.FALSE;
+		if(restaurantObj instanceof Restaurant) {
+			if(this.getId().equals(((Restaurant)restaurantObj).getId())){
+				result=true;
+			}
+		}
+		return result;
+	}
 	
+	public int hashCode() {
+		return Objects.hashCode(this.getId());
+	}
 }

@@ -34,7 +34,9 @@ public class InMemRestaurantRepository implements RestaurantRepository {
 
 	@Override
 	public Boolean contains(Restaurant entity) {
-		return this.restaurantInMemStore.containsKey(entity.getId());
+		return (this.restaurantInMemStore.containsKey(entity.getId()))
+				?this.restaurantInMemStore.get(entity.getId()).equals(entity)
+				:Boolean.FALSE;
 	}
 
 	@Override
